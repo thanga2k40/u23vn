@@ -1,0 +1,21 @@
+<p></p>
+<div style="text-align:center">
+  <img alt="Angular Logo" src="assets/2.jpg" width = 100%>
+</div>
+<p></p>
+<table class="table table-border table-info">
+	<thead>
+	<tr>
+		<th>Address</th>
+		<th>Capacity</th>
+		<th>Price</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let add of addressList">
+		<td><a routerLink="/room/{{add.id}}">{{add.address}}</a></td>
+		<td>{{add.capacity}} people</td>
+		<td>{{add.price}}</td>
+	</tr>
+	</tbody>
+</table>
